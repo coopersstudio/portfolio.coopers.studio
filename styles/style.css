@@ -1,0 +1,405 @@
+/* variables */
+:root {
+    --heading: normal 700 2.8rem/1.1 "Larken", sans-serif;
+    --sheading: normal 500 2rem/1 "Larken", sans-serif;
+    --ssheading: normal 400 1.4rem/1 "adobe-garamond-pro", serif;
+    --nav: normal 300 1.5rem/1.1 'larken';
+    --bodycopy: normal 300 1.4rem/1.6rem "adobe-garamond-pro", serif;
+    --textColor: #eee;
+}
+
+
+/* global settings */
+
+body {
+    margin: 0;
+    background: #1a1a1b;
+    color: var(--textColor);
+    text-wrap: balance;
+}
+
+h1 {
+    font: var(--heading);
+    margin: 0px;
+}
+
+h2 {
+    font: var(--sheading);
+}
+
+h3 {
+    font: var(--ssheading);
+}
+
+p,
+pre {
+    font: var(--bodycopy);
+    margin: 0 0 20px;
+}
+
+li {
+    font: var(--bodycopy);
+}
+
+.smallText {
+    font-size: 1rem;
+    color: #aaa;
+}
+
+.fotoSH {
+    margin: 20px 0 10px 0;
+}
+
+/* Sidebar */
+
+#sidebar {
+    background: #2b2b2f;
+    position: relative;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 210px;
+    padding: 15px;
+    color: var(--textColor);
+    z-index: 2;
+}
+
+.menuButton {
+    left: -50px;
+}
+
+#sidebar h1 {
+    padding-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+}
+
+nav a,
+nav li {
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+nav a:hover {
+    color: #ccf;
+}
+
+.mainLink {
+    font: var(--nav);
+    padding: 10px 0 10px 0;
+}
+
+.subLink {
+    font: var(--nav);
+    font-size: 1.1rem;
+    padding: 0 0 8px 15px;
+}
+
+footer {
+    position: absolute;
+    bottom: 40px;
+    text-align: center;
+    width: 100%;
+    left: 0;
+
+}
+
+footer p {
+    font-size: 1.2rem;
+}
+
+
+
+/* general */
+
+.subheading {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+
+/* home pages */
+
+.mainGallery {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.mainGallery a {
+    width: 100%;
+    padding: 10px;
+    height: auto;
+    aspect-ratio: 16/9;
+    box-sizing: border-box;
+}
+
+.mainGallery img {
+    /* object-fit: cover; */
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* foto pages */
+
+.body2 {
+    margin: 0 30px 100px 260px;
+    text-align: center;
+}
+
+.gallery {
+    columns: 4;
+    column-gap: 0;
+    margin: 20px auto;
+    max-width: 1810px;
+}
+
+.gallery img {
+    display: block;
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+/* desn pages */
+
+.desn {
+    background: #fff;
+    color: #222;
+}
+
+.stkrbg {
+    background-image: url("/images/desn/repeating planks.jpg");
+    background-attachment: fixed;
+    background-size: 100% auto;
+}
+
+.body3 {
+    margin: 0 30px 100px 260px;
+    text-align: center;
+}
+
+.desnGallery {
+    max-width: 1410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.body3 img {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.desnGrid {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.desnGrid img {
+    width: auto;
+    /* width adjusts to maintain aspect ratio */
+    display: block;
+    margin-bottom: 0px;
+}
+
+
+/* about me */
+
+.aboutMe p {
+    padding-left: 30px;
+    text-align: left;
+    text-wrap: wrap;
+    line-height: 1.9rem;
+}
+
+.aboutMe li {
+    margin: 0 0 10px 30px;
+    text-align: left;
+    line-height: 1.9rem;
+}
+
+.aboutMe img {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.aboutGallery {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+
+
+
+/* image overlay */
+
+.imgContainer {
+    position: relative;
+    padding: 5px;
+}
+
+.imgOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #1a1a1b;
+    display: flex;
+    flex-direction: column-reverse;
+    pointer-events: none;
+}
+
+.imgContainer:hover .imgOverlay {
+    opacity: .95;
+}
+
+.overlayText {
+    padding-bottom: 20px;
+    font: var(--sheading);
+}
+
+.imgOverlay h2 {
+    margin: 0;
+}
+
+.imgOverlay h3 {
+    color: #ccc;
+    font-size: 1.2rem;
+}
+
+
+
+.jsGallery {
+    margin: 0 auto;
+    max-width: 1800px;
+    width: 100%;
+    display: flex;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    --avg-height: 300;
+    --gap: 5;
+}
+
+.jsGallery img {
+    box-sizing: border-box;
+    /* keeps the padding from the Galery.js from throwing off the balance */
+}
+
+
+
+/* media */
+
+@media (max-width: 1200px) {
+    .gallery {
+        columns: 3;
+    }
+
+    .jsGallery {
+        --avg-height: 200;
+        --gap: 5;
+    }
+}
+
+@media (max-width: 900px) {
+    .gallery {
+        columns: 3;
+    }
+
+    .jsGallery {
+        --avg-height: 150;
+        --gap: 5;
+    }
+
+    .mainGallery a {
+        padding: 0px;
+    }
+
+    #sidebar {
+        left: -240px;
+        transition: .5s ease;
+        z-index: 2;
+    }
+
+    .menuButton {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        padding: 10px 12px 8px 6px;
+        border-radius: 0 40px 0 0;
+        background: #222;
+        color: white;
+        z-index: 1;
+    }
+
+    .menuButton div {
+        height: 4px;
+        background: #eee;
+        border-radius: 1px;
+        margin: 4px;
+    }
+
+    .menuButton .one {
+        width: 8px;
+    }
+
+    .menuButton .two {
+        width: 17px;
+    }
+
+    .menuButton .three {
+        width: 20px;
+    }
+
+    .body3 {
+        margin: 0 20px 100px 20px;
+    }
+
+    .body2 {
+        margin: 0 20px 100px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        columns: 2;
+    }
+
+    .mainGallery {
+
+        grid-template-columns: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .gallery {
+        columns: 1;
+    }
+
+}
