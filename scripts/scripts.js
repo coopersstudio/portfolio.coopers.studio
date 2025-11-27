@@ -70,12 +70,10 @@ if (window.innerWidth < 901){
 
 
 
-window.addEventListener("load", (e) => {
 if (window.innerWidth < 901) {
 document.querySelectorAll(".subLink").forEach(l => {
 l.style.display = "none";
 });
-}
-});
+};
 
 // add a resize option later...
