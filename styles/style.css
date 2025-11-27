@@ -395,6 +395,9 @@ footer p {
 
         grid-template-columns: 100%;
     }
+body {
+margin-top: 20px;
+}
 }
 
 @media (max-width: 500px) {
