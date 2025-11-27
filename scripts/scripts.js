@@ -66,14 +66,3 @@ if (window.innerWidth < 901){
       };
   });
 };
-
-
-
-
-if (window.innerWidth < 901) {
-document.querySelectorAll(".subLink").forEach(l => {
-l.style.display = "none";
-});
-};
-
-// add a resize option later...
