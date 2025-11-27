@@ -384,7 +384,7 @@ footer p {
     .body2 {
         margin: 0 20px 100px 20px;
     }
-.subLink {
+li.subLink {
 display: none;
 color: green;
 }
