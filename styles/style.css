@@ -13,9 +13,10 @@
 
 body {
     margin: 0;
-    background: #1a1a1b;
+    background: #fff;
     color: var(--textColor);
     text-wrap: balance;
+    
 }
 
 h1 {
