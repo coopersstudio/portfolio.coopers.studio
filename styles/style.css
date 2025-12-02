@@ -385,10 +385,22 @@ footer p {
     .body2 {
         margin: 0 20px 100px 20px;
     }
-.subLink {
-display: none;
+    .subLink {
+        display: none;
+    }
 }
+
+@media (max-height: 850px) {
+    .subLink {
+        display: none;
+    }
 }
+@media (max-height: 1000px) {
+    .desnGallery, .jsGallery, .mainGallery {
+        max-width: 1200px;
+    }
+}
+
 
 @media (max-width: 768px) {
     .gallery {
@@ -399,9 +411,9 @@ display: none;
 
         grid-template-columns: 100%;
     }
-body {
-margin-top: 20px;
-}
+    body {
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 500px) {
