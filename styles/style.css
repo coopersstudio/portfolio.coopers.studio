@@ -4,7 +4,7 @@
     --sheading: normal 500 2rem/1 "Larken", sans-serif;
     --ssheading: normal 400 1.4rem/1 "adobe-garamond-pro", serif;
     --nav: normal 300 1.5rem/1.1 'larken';
-    --bodycopy: normal 300 1.4rem/1.6rem "adobe-garamond-pro", serif;
+    --bodycopy: normal 300 1.4rem/1.8rem "adobe-garamond-pro", serif;
     --textColor: #eee;
 }
 
@@ -80,7 +80,7 @@ nav ul {
     padding: 0px;
 }
 
-nav a,
+.navContainer a,
 nav li {
     text-decoration: none;
     color: var(--textColor);
