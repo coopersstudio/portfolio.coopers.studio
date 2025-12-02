@@ -311,6 +311,7 @@ footer p {
 .jsGallery img {
     box-sizing: border-box;
     /* keeps the padding from the Galery.js from throwing off the balance */
+    visibility: hidden;
 }
 
 
