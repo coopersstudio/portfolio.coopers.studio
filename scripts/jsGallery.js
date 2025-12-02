@@ -41,7 +41,6 @@ function jsGallery(gallery) {
             img.style.width = w + "px";
             img.style.height = finalH + "px";
             img.style.padding = gap + "px";
-            img.style.visibility = "visible";
 
             used += w;
         });
@@ -84,6 +83,9 @@ function jsGallery(gallery) {
     if (currentRow.length > 0) {
         finalizeRow();
     }
+    gallery.querySelectorAll("img").forEach(img => {
+        img.style.visibility = "visible";
+    });
 }
 
 
